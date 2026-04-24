@@ -447,9 +447,9 @@ void Entity::render()
 
     if (mEntityType == NPC) {
         // Draw Aggro Range
-        DrawCircleLinesV(mPosition, mAggroRange, ColorAlpha(YELLOW, 0.3f));
+        DrawCircleLinesV(mPosition, mAggroRange, ColorAlpha(YELLOW, 0.8f));
         // Tower Range
-        if (mScale.y > 200) DrawCircleLinesV(mPosition, 600.0f, ColorAlpha(BLUE, 0.5f));
+        if (mScale.y > 200) DrawCircleLinesV(mPosition, 600.0f, ColorAlpha(RED, 0.8f));
     }
 
     // HP Bar Drawing

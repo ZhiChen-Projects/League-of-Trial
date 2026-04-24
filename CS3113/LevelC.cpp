@@ -233,7 +233,6 @@ void LevelC::update(float deltaTime)
     }
 
     mGameState.player->update(deltaTime, nullptr, mGameState.map, nullptr, 0);
-    mGameState.player->resetMovement();
 }
 
 void LevelC::render() {
