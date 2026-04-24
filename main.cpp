@@ -1,3 +1,13 @@
+/**
+* Author: Zhi Chen
+* Assignment: Trial of League
+* Date due: 4/24/26 2:00pm
+* I pledge that I have completed this assignment without
+* collaborating with anyone else, in conformance with the
+* NYU School of Engineering Policies and Procedures on
+* Academic Misconduct.
+**/
+
 #include "CS3113/LevelA.h"
 #include "CS3113/LevelB.h"
 #include "CS3113/LevelC.h"
