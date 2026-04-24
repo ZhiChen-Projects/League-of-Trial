@@ -91,12 +91,12 @@ void initialise()
 
     // Set Volumes
     for(int i=0; i<4; i++) {
-        SetSoundVolume(sfxStepsLth[i], 0.8f);
-        SetSoundVolume(sfxStepsMetal[i], 0.8f);
+        SetSoundVolume(sfxStepsLth[i], 0.9f);
+        SetSoundVolume(sfxStepsMetal[i], 0.9f);
     }
-    SetSoundVolume(sfxBoom, 0.1f);
-    SetSoundVolume(sfxHeal, 0.2f);
-    SetSoundVolume(sfxSpin, 0.1f);
+    SetSoundVolume(sfxBoom, 0.3f);
+    SetSoundVolume(sfxHeal, 0.4f);
+    SetSoundVolume(sfxSpin, 0.3f);
 
 
     // All 6 scene
@@ -193,7 +193,7 @@ void processInput()
     if (IsKeyPressed(KEY_ONE)) gCurrentScene->setNextSceneID(1);
     if (IsKeyPressed(KEY_TWO)) gCurrentScene->setNextSceneID(2);
     if (IsKeyPressed(KEY_THREE)) gCurrentScene->setNextSceneID(3);
-    
+    if (IsKeyPressed(KEY_ZERO)) gCurrentScene->setNextSceneID(0);
     if (IsKeyPressed(KEY_ESCAPE) || WindowShouldClose()) {
         gAppStatus = TERMINATED;
     }

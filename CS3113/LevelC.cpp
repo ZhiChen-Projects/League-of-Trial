@@ -72,7 +72,7 @@ void LevelC::initialise()
 
     mGameState.player->setHP(600.0f); // Set Player HP
 
-    mGameState.enemies[0]->setHP(2000.0f); // Set Enemy starting HP
+    mGameState.enemies[0]->setHP(1500.0f); // Set Enemy starting HP
     mGameState.enemies[1]->setHP(500.0f);
     mGameState.enemies[4]->setHP(500.0f);
 }
@@ -199,8 +199,14 @@ void LevelC::update(float deltaTime)
                 mGameState.nextSceneID = 4;
             }
                   // Boss 
-            else if (i == 1 || i == 4) mGameState.player->addGold(75); // Monsters
-            else if (i == 2) mGameState.player->addGold(1000); // Tower
+            else if (i == 1 || i == 4) {
+                mGameState.player->addGold(75); 
+                mGameState.player->heal(150);
+            }// Monsters
+            else if (i == 2) {
+                mGameState.player->addGold(1000); // Tower
+                mGameState.player->heal(400);
+            }
             
             e->deactivate();
         }

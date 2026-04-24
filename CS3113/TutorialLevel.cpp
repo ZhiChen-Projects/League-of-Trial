@@ -90,7 +90,7 @@ void TutorialLevel::render() {
     DrawText("- [Q] Sprinting Man: Speed boost + contact damage.", 150, 680, 25, WHITE);
     DrawText("- [W] Breathe: Instant health restoration.", 150, 720, 25, WHITE);
     DrawText("- [E] Beyblade: Spin for Damage Over Time.", 150, 760, 25, WHITE);
-    DrawText("- [R] Explode: Heavy ultimate damage.", 150, 800, 25, WHITE);
+    DrawText("- [R] Explode: Heavy ultimate damage. (YOU MUST AIM AT HIM!!! OTHERWISE IT WON'T WORK)", 150, 800, 25, WHITE);
     DrawText("- [B] Shop: Top (Sword) increase damage | Middle (Armor) increase damage reduction | Bottom (Health) increase max health.", 150, 840, 25, WHITE);
     DrawText("Goal: Beat all 3 stages without dying once :). GLHF! ", 200, 900, 40, GOLD);
     DrawText("Boss (More HP): kill to progress", 650, 580, 25, WHITE);

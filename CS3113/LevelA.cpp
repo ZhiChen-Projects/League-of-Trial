@@ -199,9 +199,14 @@ void LevelA::update(float deltaTime)
                 mGameState.nextSceneID = 2;
             }
 
-            else if (i == 1 || i == 4) mGameState.player->addGold(75); // Monsters
-            else if (i == 2) mGameState.player->addGold(1000); // Tower
-            
+            else if (i == 1 || i == 4) {
+                mGameState.player->addGold(75); 
+                mGameState.player->heal(150);
+            }// Monsters
+            else if (i == 2) {
+                mGameState.player->addGold(1000); // Tower
+                mGameState.player->heal(400);
+            }
             e->deactivate();
         }
         if (mGameState.player->isDead()) {
